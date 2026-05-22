@@ -1,0 +1,36 @@
+name: Publish branch site
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.actor != 'github-actions[bot]' && !contains(github.event.head_commit.message, '[skip branch site]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: quartz/package-lock.json
+      - name: Sync published site to repository root
+        run: bash ./scripts/publish-branch-site.sh
+      - name: Commit published site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .nojekyll 404.html analysis assets favicon.ico index.css index.html index.xml must-know postscript.js prescript.js sitemap.xml sources static tags topics
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update published site [skip branch site]"
+          git push

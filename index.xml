@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>PIS Exam Speedrun</title>
+      <link>https://olexamatej.github.io/pis-prep</link>
+      <description>Posledních 10 poznámek on PIS Exam Speedrun</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Canvas, SVG, D3 a GeoJSON</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/canvas-svg-d3</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/canvas-svg-d3</guid>
+    <description><![CDATA[ Canvas, SVG, D3 a GeoJSON: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>Dátový sklad, OLTP a ROLAP</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/datovy-sklad-rolap</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/datovy-sklad-rolap</guid>
+    <description><![CDATA[ Dátový sklad, OLTP a ROLAP: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>Gestalt, vnímanie a bullet graf</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/gestalt-vnimanie-bullet</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/gestalt-vnimanie-bullet</guid>
+    <description><![CDATA[ Gestalt, vnímanie a bullet graf: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>GraphQL, REST a JWT</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/graphql-rest-jwt</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/graphql-rest-jwt</guid>
+    <description><![CDATA[ GraphQL, REST a JWT: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>Mikroslužby a komunikácia</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/mikrosluzby-komunikacia</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/mikrosluzby-komunikacia</guid>
+    <description><![CDATA[ Mikroslužby a komunikácia: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>OLAP kocka a operácie</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/olap-kocka-operacie</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/olap-kocka-operacie</guid>
+    <description><![CDATA[ OLAP kocka a operácie: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>SOAP, WSDL a UDDI</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/soap-wsdl-uddi</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/soap-wsdl-uddi</guid>
+    <description><![CDATA[ SOAP, WSDL a UDDI: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>WfMC referenčný model</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/wfmc-referencny-model</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/wfmc-referencny-model</guid>
+    <description><![CDATA[ WfMC referenčný model: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>Workflow dáta, aplikácie a brány</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/workflow-data-brany</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/workflow-data-brany</guid>
+    <description><![CDATA[ Workflow dáta, aplikácie a brány: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item><item>
+    <title>Workflow pojmy a súvislosti</title>
+    <link>https://olexamatej.github.io/pis-prep/must-know/workflow-pojmy</link>
+    <guid>https://olexamatej.github.io/pis-prep/must-know/workflow-pojmy</guid>
+    <description><![CDATA[ Workflow pojmy a súvislosti: distilled must-know exam answer. ]]></description>
+    <pubDate>Fri, 22 May 2026 13:33:44 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

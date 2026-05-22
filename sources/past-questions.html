@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr"><head><title>Past Questions</title><meta charset="utf-8"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="PIS Exam Speedrun"/><meta property="og:title" content="Past Questions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Past Questions"/><meta name="twitter:description" content="Transformed PIS-najčastejšie otázky source."/><meta property="og:description" content="Transformed PIS-najčastejšie otázky source."/><meta property="og:image:alt" content="Transformed PIS-najčastejšie otázky source."/><meta property="og:image" content="https://olexamatej.github.io/pis-prep/static/og-image.png"/><meta property="og:image:url" content="https://olexamatej.github.io/pis-prep/static/og-image.png"/><meta name="twitter:image" content="https://olexamatej.github.io/pis-prep/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="olexamatej.github.io/pis-prep"/><meta property="og:url" content="https://olexamatej.github.io/pis-prep/sources/past-questions"/><meta property="twitter:url" content="https://olexamatej.github.io/pis-prep/sources/past-questions"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Transformed PIS-najčastejšie otázky source."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvbWV0anUvcGlzL3F1YXJ0ei9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://olexamatej.github.io/pis-prep/index.xml"/></head><body data-slug="sources/past-questions"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">PIS Exam Speedrun</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Hledat</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Hledejte něco" placeholder="Hledejte něco"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Tmavý režim"><title>Tmavý režim</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Světlý režim"><title>Světlý režim</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Režim čtečky"><title>Režim čtečky</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-39"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Procházet</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-39" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Past Questions</a></div></nav><h1 class="article-title">Past Questions</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T13:33:44.369Z">22. 5. 2026</time><span>18 min čtení</span></p><ul class="tags"><li><a href="../tags/pis" class="internal tag-link">pis</a></li><li><a href="../tags/source" class="internal tag-link">source</a></li></ul></div></div><article class="popover-hint"><h1 id="past-questions">Past Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#past-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Táto stránka je transformovaný zdrojový súbor. Base64 obrázky boli vyextrahované do <code>assets/images</code>, aby ich Quartz normálne renderoval.</p>
+<p><strong>PIS</strong></p>
+<p>Príprava na semestrálnu skúšku 2022/2023</p>
+<p><strong>Dôležité informácie o semestrálnej skúške povedané na prednáške:</strong></p>
+<p>Riadny termín:</p>
+<p><strong>17.05.2023 13:00 - 14:50 – D105</strong></p>
+<p>1. opravný termín:</p>
+<p><strong>31.05.2023 11:00 - 12:50 – učebňa D0206</strong></p>
+<p>2. opravný termín:</p>
+<p><strong>08.06.2023 11:00 - 12:50 – učebňa E104</strong></p>
+<p>Výskyt otázok:</p>
+<p><a href="#15x-wf-%E2%80%93-8x-definujte-pojmy-proces,-uloha,-pripad,-zdroj,-pracovna-polozka,-aktivita.-uvedte-ako-spolu-suvisia." class="internal alias">15x WF – 8x  Definujte pojmy proces, uloha, pripad, zdroj, pracovna polozka, aktivita. Uvedte ako spolu suvisia.</a></p>
+<p><a href="#15x-wf---4x---schema-referencneho-modelu.-nakreslit-schemu,-popisat-prvky-a-rozhrania-(strucne)." class="internal alias">15x WF - 4x - Schema referencneho modelu. Nakreslit schemu, popisat prvky a rozhrania (strucne).</a></p>
+<p><a href="#15x-wf---2x-popiste-klientske-a-vyvolane-aplikacie-vo-wf.-popiste-aplikacne,-vecne,-riadace-data-vo-wf." class="internal alias">15x WF - 2xPopiste klientske a vyvolane aplikacie vo WF. Popiste aplikacne, vecne, riadace data vo WF.</a></p>
+<p><a href="#15x-wf---1x-nakreslete-a-popi%C5%A1te-co-d%C4%9Blaj%C3%AD-jednotliv%C3%A9-prvky-%C5%99%C3%ADzen%C3%AD-toku-ve-workflow:-and-split,-and-join,-xor-split,-xor-merge" class="internal alias">15x WF - 1x  Nakreslete a popište co dělají jednotlivé prvky řízení toku ve workflow: AND-split, AND-join, XOR-split, XOR-merge</a></p>
+<p><a href="#8x-multidimenzionalna-kocka-pre-priemer,-sucet.-definicia-kocky,-ar.-priemeru.-roll-up,-drill-down,-pivot,-slice&amp;dice." class="internal alias">8x Multidimenzionalna kocka pre priemer, sucet. Definicia kocky, ar. priemeru. roll-up, drill-down, pivot, slice&amp;dice.</a></p>
+<p><a href="#6x-zotavitelna-fronta.-definicia,-princip,-suvislost-s-transakciami.-popisat-jej-vlastnosti-a-operacie.-ukazat-pouzitie-na-jednoduchom-priklade." class="internal alias">6x Zotavitelna fronta. Definicia, princip, suvislost s transakciami. Popisat jej vlastnosti a operacie. Ukazat pouzitie na jednoduchom priklade.</a></p>
+<p><a href="#4x-architektura-is-sest%C3%A1vaj%C3%ADc%C3%AD-z-mikroslu%C5%BEeb,-co-to-je-mikrosluzba-a-jeji-vlastnosti,-porovnat-s-monolitickou-architekturou-a-nakreslit-priklad-is-s-webovym-rozhrani-a-mikrosluzbami." class="internal alias">4x Architektura IS sestávající z mikroslužeb, co to je mikrosluzba a jeji vlastnosti, porovnat s monolitickou architekturou a nakreslit priklad IS s webovym rozhrani a mikrosluzbami.</a></p>
+<p><a href="#4x-graphql-co-to-je?-v-com-sa-lisi-od-rest?-popisat-vlastnosti-a-datovy-model-(datove-typy).-co-treba-definovat-na-klientskej-a-serverovej-strane-aby-sme-ho-mohli-pouzit?" class="internal alias">4x GraphQL Co to je? V com sa lisi od REST? Popisat vlastnosti a datovy model (datove typy). Co treba definovat na klientskej a serverovej strane aby sme ho mohli pouzit?</a></p>
+<p><a href="#4x-gestalt-principy,-vyjmenovat-a-nakreslit-a-popsat-(7b)" class="internal alias">4x Gestalt principy, vyjmenovat a nakreslit a popsat (7b)</a></p>
+<p><a href="#3x-olap-charakteristika,-rolap,-jak-se-ukl%C3%A1d%C3%A1-do-rela%C4%8Dn%C3%AD-db---sch%C3%A9mata-hv%C4%9Bzda-a-vlo%C4%8Dka-popsat." class="internal alias">3x OLAP charakteristika, ROLAP, jak se ukládá do relační DB - schémata hvězda a vločka popsat.</a></p>
+<p><a href="#3x-canvas-a-svg,-popsat,-uvest-jak-se-vztahuji-k-dom-a-pro-vykresleni-diagramu." class="internal alias">3x Canvas a SVG, popsat, uvest jak se vztahuji k DOM a pro vykresleni diagramu.</a></p>
+<p><a href="#3x-vedome-vs.-podvedome-vnimanie.-atributy-podvedomeho-vnimania.-ako-sa-podvedome-vnimanie-uplatni-vo-vizualizacii?-ako-sa-podvedome-vnimanie-uplatni-v-dashboardech?" class="internal alias">3x Vedome vs. podvedome vnimanie. Atributy podvedomeho vnimania. Ako sa podvedome vnimanie uplatni vo vizualizacii? Ako sa podvedome vnimanie uplatni v dashboardech?</a></p>
+<p><a href="#2x-d3.js-popsat,-co-ma-na-vstupu/vystupu.-uveden-seznam-items-=-%5B15,312,24124...%5D-a-bylo-potreba-napsat-prikaz-ktery-ziska-nejaky-seznam-a-nahradi-jeho-hodnoty-s-hodnotami-v-seznamu-items." class="internal alias">2x D3.js popsat, co ma na vstupu/vystupu. Uveden seznam items = [15,312,24124…] a bylo potreba napsat prikaz ktery ziska nejaky seznam a nahradi jeho hodnoty s hodnotami v seznamu items.</a></p>
+<p><a href="#2x-autentizacia-v-reste.-preco-nie-je-mozne-pouzit-sessions?-uvedte-mechanizmy-autentizacie-pre-rest.-popiste-json-web-token,-co-to-je,-z-coho-sa-sklada-a-ako-prebieha-autentizacia-pomocou-jwt." class="internal alias">2x Autentizacia v RESTe. Preco nie je mozne pouzit sessions? Uvedte mechanizmy autentizacie pre REST. Popiste JSON Web Token, co to je, z coho sa sklada a ako prebieha autentizacia pomocou JWT.</a></p>
+<p><a href="#2x-cdi---popiste-cdi,-ako-sa-definuju-cdi-objekty,-kto-ich-vytvara.-popiste-pojem-scope-v-tomto-kontexte,-vysvetlite-request,-session,-application-scope." class="internal alias">2x CDI - Popiste CDI, ako sa definuju CDI objekty, kto ich vytvara. Popiste pojem scope v tomto kontexte, vysvetlite request, session, application scope.</a></p>
+<p><a href="#2x-sekvencni-a-hierachicke-procesy-a-nakreslit-v-uml" class="internal alias">2x Sekvencni a hierachicke procesy a nakreslit v UML</a></p>
+<p><a href="#2x-zretazene-procesy-vs-savepointy" class="internal alias">2x Zretazene procesy vs Savepointy</a></p>
+<p><a href="#1x-typy-geografickych-grafu-/-vizualizace-geografick%C3%BDch-dat,-co-je-geojson-a-pou%C5%BEit%C3%AD" class="internal alias">1x Typy geografickych grafu / vizualizace geografických dat, co je GeoJSON a použití</a></p>
+<p><a href="#1x-dedicnost-v-objektovem-modelu.-definice-jednoduche-a-vicenasobne-dedicnosti-+-jejich-grafy." class="internal alias">1x dedicnost v objektovem modelu. definice jednoduche a vicenasobne dedicnosti + jejich grafy.</a></p>
+<p><a href="#1x-datov%C3%BD-sklad---sch%C3%A9ma,-datov%C3%BD-model,-jak-se-li%C5%A1%C3%AD-od-oltp" class="internal alias">1x Datový sklad - schéma, datový model, jak se liší od OLTP</a></p>
+<p><a href="#1x-jak-vypad%C3%A1-bullet-graf,-co-z-n%C4%9Bj-lze-vy%C4%8D%C3%ADst" class="internal alias">1x Jak vypadá Bullet graf, co z něj lze vyčíst</a></p>
+<p><a href="#1x-v%C3%ADcetypovost---k-%C4%8Demu-je-pot%C5%99eba,-jak%C3%BD-je-s-n%C3%AD-spojen-probl%C3%A9m,-jak-se-%C5%99e%C5%A1%C3%AD,-uv%C3%A9st-p%C5%99%C3%ADklad" class="internal alias">1x Vícetypovost - k čemu je potřeba, jaký je s ní spojen problém, jak se řeší, uvést příklad</a></p>
+<p><a href="#todo---1x-,-definovat-multidimenzionalni-kostku,-nakreslit-4d-kostku-pro-time,-item,-location,-supplier.-pop%C3%ADsa%C5%A5-kostku-pro-po%C4%8Det." class="internal alias">TODO - 1x , definovat multidimenzionalni kostku, nakreslit 4D kostku pro time, item, location, supplier. Popísať kostku pro počet.</a></p>
+<h6 id="15x-wf--8x--definujte-pojmy-proces-uloha-pripad-zdroj-pracovna-polozka-aktivita-uvedte-ako-spolu-suvisia">15x WF – 8x  Definujte pojmy proces, uloha, pripad, zdroj, pracovna polozka, aktivita. Uvedte ako spolu suvisia.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15x-wf--8x--definujte-pojmy-proces-uloha-pripad-zdroj-pracovna-polozka-aktivita-uvedte-ako-spolu-suvisia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>• proces</p>
+<p>• koordinační mechanismus napříč organizačními jednotkami distribuovaný v čase a prostoru</p>
+<p>• integruje a koordinuje distribuované zdroje a poskytuje správnou informaci správnému jednotlivci ve správný čas k vykonání přiděleného úkolu</p>
+<p>• případ (case)</p>
+<p>• konkrétní řešený problém (žádost o půjčku)</p>
+<p>• úloha (task)</p>
+<p>• krok provádění procesu</p>
+<p>• zdroj (resource)</p>
+<p>• zařízení (fax, tiskárna) nebo osoba (účastník, dělník, zaměstnanec)</p>
+<p>• pracovní položka, požadavek (work item)<br/>
+• úkol řešený pro konkrétní případ, např. „vrátit panu Novákovi peníze za reklamované zboží“</p>
+<p>• činnost (activity)<br/>
+• úkol řešený pro konkrétní případ a využívající konkrétní zdroj<br/>
+• vytváří frontu požadavků (worklist)</p>
+<p>Jak to spolu souvisí? - Určují nám pohled na workflow a taky jej reprezentují.<br/>
+<strong><img src=".././assets/images/past-image1.png" alt/></strong></p>
+<h6 id="15x-wf---4x---schema-referencneho-modelu-nakreslit-schemu-popisat-prvky-a-rozhrania-strucne">15x WF - 4x - Schema referencneho modelu. Nakreslit schemu, popisat prvky a rozhrania (strucne).<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15x-wf---4x---schema-referencneho-modelu-nakreslit-schemu-popisat-prvky-a-rozhrania-strucne" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><img src=".././assets/images/past-image2.png" alt/></p>
+<p><strong>WES (workflow enactment service)</strong>:</p>
+<ul>
+<li>Zajišťuje vykonání správné činnosti pomocí správného prostředku ve správný čas</li>
+<li>Sklada se z jednoho nebo více workflow engines</li>
+</ul>
+<p><strong>Workflow engine</strong>:</p>
+<ul>
+<li>Interpretace definice procesu</li>
+<li>Vytváří instance procesů a řídí jejich vykonávání</li>
+<li>Zajišťuje přechody mezi aktivitami a vytváření pracovních položek</li>
+</ul>
+<p><strong>Klientské aplikace workflow</strong>:</p>
+<ul>
+<li>Provádí jednotlivé úkoly</li>
+<li>Interakce uživatelů s workflow</li>
+</ul>
+<p><strong>Vyvolané aplikace</strong>:</p>
+<ul>
+<li>Spouštěné v souvislosti se započetím úkolu apod.</li>
+</ul>
+<p><strong>Nástroje pro definici procesů</strong>:</p>
+<ul>
+<li>
+<p>Umožňují definici a rozplánování procesů na počítači</p>
+</li>
+</ul>
+<p><strong>ROZHRANÍ</strong></p>
+<ol>
+<li>Pro nástroje pro definici procesů</li>
+<li>Pro workflow klienty</li>
+<li>Pro volané aplikace</li>
+<li>Pro komunikaci s jinými WFM systémy</li>
+<li>Pro administraci a monitorování</li>
+</ol>
+<p>Data WF:</p>
+<p>• Model organizační struktury – Role, vztahy nadřízený – podřízený</p>
+<p>• Definice procesu – Činnosti, přidělení rolím, rozhodovací pravidla</p>
+<p>• Seznam úkolů – Aktuální úkoly pro konkrétní uživatele – Uživateli buď skryt (postupné přidělování úkolů) nebo přístupný (uživatel si volí pořadí, možno i více úkolů současně)</p>
+<p>• Řídicí data workflow – Interní data WF systému nutná pro zajištění chodu příp. zotavení po havárii – Nedostupná externím aplikacím</p>
+<p>• Věcná data workflow – Zpracování jádrem workflow systému – Používána pro rozhodování o dalším postupu – Dostupná i aplikacím</p>
+<p>• Aplikační data workflow – Specifická data aplikací podporujících proces – Nejsou přístupná WF systému</p>
+<h6 id="15x-wf---2x-popiste-klientske-a-vyvolane-aplikacie-vo-wf-popiste-aplikacne-vecne-riadace-data-vo-wf">15x WF - 2x Popiste klientske a vyvolane aplikacie vo WF. Popiste aplikacne, vecne, riadace data vo WF.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15x-wf---2x-popiste-klientske-a-vyvolane-aplikacie-vo-wf-popiste-aplikacne-vecne-riadace-data-vo-wf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>Procedurální automatizace business procesu prostřednictvím správy sekvence pracovních aktivit a vyvolání příslušných lidských nebo IT zdrojů příslušejících k těmto aktivitám.</p>
+<p><strong>Klientské aplikace workflow</strong>:</p>
+<ul>
+<li>Provádí jednotlivé úkoly</li>
+<li>Interakce uživatelů s workflow</li>
+</ul>
+<p><strong>Vyvolané aplikace</strong>:</p>
+<ul>
+<li>Spouštěné v souvislosti se započetím úkolu - automatizovane apod.</li>
+<li>Su to aplikace 3tich stran. Word, Učtovnicka aplikace apod.</li>
+</ul>
+<p>• Řídicí data workflow – Interní data WF systému nutná pro zajištění chodu příp. zotavení po havárii – Nedostupná externím aplikacím</p>
+<p>• Věcná data workflow – Zpracování jádrem workflow systému – Používána pro rozhodování o dalším postupu – Dostupná i aplikacím</p>
+<p>• Aplikační data workflow – Specifická data aplikací podporujících proces – Nejsou přístupná WF systému</p>
+<h6 id="15x-wf---1x--nakreslete-a-popište-co-dělají-jednotlivé-prvky-řízení-toku-ve-workflow-and-split-and-join-xor-split-xor-merge">15x WF - 1x  Nakreslete a popište co dělají jednotlivé prvky řízení toku ve workflow: AND-split, AND-join, XOR-split, XOR-merge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15x-wf---1x--nakreslete-a-popište-co-dělají-jednotlivé-prvky-řízení-toku-ve-workflow-and-split-and-join-xor-split-xor-merge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong>Parallel split (AND - split)</strong></p>
+<ul>
+<li>Rozděluje tok procesů (workflow) do dvou a více paralelních vláken</li>
+</ul>
+<p><img src=".././assets/images/past-image3.png" alt/></p>
+<p><strong>Synchronizace (AND - join)</strong></p>
+<ul>
+<li>Dalším úkolem se pokračuje, až po dokončení  všech předchozích vláken.</li>
+</ul>
+<p><img src=".././assets/images/past-image4.png" alt/><br/>
+<strong>Výlučné rozhodnutí (XOR - split)</strong></p>
+<ul>
+<li>Rozděluje tok procesů na dvě nebo více větví,  které jsou vzájemně výlučné. Podle podmínky v Gateway se vstupuje do jedné z větví.</li>
+</ul>
+<p><img src=".././assets/images/past-image5.png" alt/></p>
+<p><strong>Jednoduché spojení (XOR - merge)</strong></p>
+<ul>
+<li>Spojení dvou nebo více nezávislých větví do  jedné. Navazující aktivita začne okamžitě, jakmile jedno vlákno dosáhne svého konce.</li>
+</ul>
+<p><img src=".././assets/images/past-image6.png" alt/></p>
+<h6 id="8x-multidimenzionalna-kocka-pre-priemer-sucet-definicia-kocky-ar-priemeru-roll-up-drill-down-pivot-slicedice">8x Multidimenzionalna kocka pre priemer, sucet. Definicia kocky, ar. priemeru. roll-up, drill-down, pivot, slice&amp;dice.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8x-multidimenzionalna-kocka-pre-priemer-sucet-definicia-kocky-ar-priemeru-roll-up-drill-down-pivot-slicedice" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<ul>
+<li>
+<p>Dimenze je uspořádatelná množina hodnot diskrétního základního typu (integer, výčet, čas) nebo množina jejich struktur hierarchicky organizovaných</p>
+<p><img src=".././assets/images/past-image7.png" alt/><img src=".././assets/images/past-image8.png" alt/></p>
+<p><img src=".././assets/images/past-image9.png" alt/></p>
+</li>
+</ul>
+<p>Typicky se tvoří více dotazů po sobě (podle toho co manažer chce), proto OLAP systém umožňuje následující operace s kostkou:</p>
+<ul>
+<li><strong>roll-up</strong> - vzrůst úrovně agregace = snížení detailu (takže uberu nějakou dimenzi)
+<ul>
+<li>např. manažera nezajímá cena, tak tuto dimenzi ubere</li>
+</ul>
+</li>
+<li><strong>drill-down</strong> - snížení úrovně agregace = zvýšení detailu (přidám dimenzi)
+<ul>
+<li>např. manažer chce výsledný model agregovat podle jednotlivých produktů, tak přidá dimenzi produkt</li>
+</ul>
+</li>
+<li><strong>pivoting</strong> - změna uspořádání dimenzí (to znamená že vznikne trochu jinak členěná výsledná kostka)
+<ul>
+<li>např. manažer změní model tak, že nejprve agreguje podle času a až potom podle místa</li>
+</ul>
+</li>
+<li><strong>slicing &amp; dicing</strong> - výběr projekce (změna skutečné kardinality 1 nebo více dimenzí)
+<ul>
+<li>např. manažer chce více rozšířit agregaci podle času - zanoří se v čase a bude agregovat podle dnů, nikoliv podle měsíců</li>
+</ul>
+</li>
+</ul>
+<h6 id="6x-zotavitelna-fronta-definicia-princip-suvislost-s-transakciami-popisat-jej-vlastnosti-a-operacie-ukazat-pouzitie-na-jednoduchom-priklade">6x Zotavitelna fronta. Definicia, princip, suvislost s transakciami. Popisat jej vlastnosti a operacie. Ukazat pouzitie na jednoduchom priklade.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6x-zotavitelna-fronta-definicia-princip-suvislost-s-transakciami-popisat-jej-vlastnosti-a-operacie-ukazat-pouzitie-na-jednoduchom-priklade" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>Mechanismus na plánování transakcí pro budoucí vykonání a zajištění, že <strong>vykonání bylo skutečně v aplikaci provedeno a jenom jednou</strong>.</p>
+<p><strong>Operace</strong><br/>
+<strong>Vlož</strong>: transakce vkládá do fronty záznam o práci naplánované k provedení i s jeji parametry, právě když je transakce potvrzena<br/>
+<strong>Vyber</strong>: Záznam je později vyzvednut jinou transakcí, která danou práci provede. Tato transakce bývá typicky spuštěna serverem, který periodicky kontroluje frontu a vybírá z ní pracovní požadavky<br/>
+<strong>Vkládaný/vybíraný záznam</strong>: obsahuje informaci o akci, která je plánována a o datech, která je potřeba mezi jednotlivými transakcemi v řetězu předávat (např. ID objednávky)</p>
+<p>Zotavitelná fronta musí být <strong>trvanlivá</strong> - pro případ havárie systému.<br/>
+Realizováno např. prostřednictvím tabulky v DB ; lepší je však využití oddělený aplikační modul</p>
+<p>Atomicita transakce vyžaduje od vložení/výběru z fronty tuto koordinaci s potvrzením transakce:</p>
+<ul>
+<li>Vloží-li transakce do fronty záznam a později je zrušena, tak musí být tento záznam z fronty odstraněn</li>
+<li>Vybere-li transakce z fronty záznam a později je zrušena, tak musí být tento záznam do fronty vrácen</li>
+<li>Dokud není transakce T potvrzena, tak nelze jinými transakcemi vybírat záznamy, které byly transakcí T vloženy, protože transakce T může být ještě zrušena</li>
+</ul>
+<p><strong>Příklad:</strong></p>
+<p>Systém se skládá ze tří hlavních částí – objednávky, expedice, fakturace. Úkoly lze vykonat třemi oddělenými transakcemi. Jediný požadavek je, aby <strong>fakturace a expedice byla provedena kdykoliv po úspěšném dokončení objednávky</strong>, a to i v případě havárie systému ihned po objednání.</p>
+<h6 id="4x-architektura-is-sestávající-z-mikroslužeb-co-to-je-mikrosluzba-a-jeji-vlastnosti-porovnat-s-monolitickou-architekturou-a-nakreslit-priklad-is-s-webovym-rozhrani-a-mikrosluzbami">4x Architektura IS sestávající z mikroslužeb, co to je mikrosluzba a jeji vlastnosti, porovnat s monolitickou architekturou a nakreslit priklad IS s webovym rozhrani a mikrosluzbami.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4x-architektura-is-sestávající-z-mikroslužeb-co-to-je-mikrosluzba-a-jeji-vlastnosti-porovnat-s-monolitickou-architekturou-a-nakreslit-priklad-is-s-webovym-rozhrani-a-mikrosluzbami" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong>Mikroslužby</strong></p>
+<p>Aplikace je rozdělena na malé části. Typicky vlastní databáze (nepřístupná vně systému), komunikace mezi jednotlivými částmi. Spojovacim bodem je pouze API gateaway. Typicky malý tým vývojářů na každou část (2 pizzas rule).</p>
+<p><strong>Výhody</strong> - technologická nezávislost = rôzne vývojové prostredie, snadné aktualizace = aktualizuje sa iba jedna mikroslužba z veľkého celku, kontinuální vývoj</p>
+<p><strong>Nevýhody</strong> - špatná testovatelnost (závislosti na dalších službách) - hrubé testy je možné spustiť lokálne, ostatnú funkcionalitu až v reálnom provoze, režie komunikace = formulace, dekodovani správy, možné řetězové selhání, riziko nekompatibility</p>
+<p><strong>Vlastnosti mikroslužby</strong> - disponuje vnějším API, externí konfigurace, logování, vzdálené sledování (telemetrie, <em>health check</em>)</p>
+<p><strong>Monolitická architektura</strong></p>
+<p>Jedna aplikace - Jedna databáze, webové (aplikační) rozhraní, Business moduly – např. objednávky, doprava, sklad, …</p>
+<p><strong>Výhody</strong> - Jednotná technologie, sdílený popis dat, testovatelnost, rychlé nasazení (jeden balík)</p>
+<p><strong>Nevýhody</strong> - Rozměry aplikace mohou přerůst únosnou mez, neumožňuje rychlé aktualizace částí, reakce na problémy, pokud použité technologie zastarají, přepsání je téměř nemožné</p>
+<p><strong>Příklad mikroslužby (Uber):</strong><br/>
+<strong><img src=".././assets/images/past-image10.png" alt/></strong></p>
+<h6 id="4x-graphql-co-to-je-v-com-sa-lisi-od-rest-popisat-vlastnosti-a-datovy-model-datove-typy-co-treba-definovat-na-klientskej-a-serverovej-strane-aby-sme-ho-mohli-pouzit">4x GraphQL Co to je? V com sa lisi od REST? Popisat vlastnosti a datovy model (datove typy). Co treba definovat na klientskej a serverovej strane aby sme ho mohli pouzit?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4x-graphql-co-to-je-v-com-sa-lisi-od-rest-popisat-vlastnosti-a-datovy-model-datove-typy-co-treba-definovat-na-klientskej-a-serverovej-strane-aby-sme-ho-mohli-pouzit" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>K čemu to je:<br/>
+V DB mám informace o osobě (jméno, příjmení, email, adresa, …). Přijdu na nějakou stránku, která má zobrazovat informace o osobě, ale jen některé. A tady přichází na řadu GraphQL, které umožní v dotazu specifikovat, které informace chci vrátit (např. pouze jméno a příjmení).<br/>
+GrapqQL je dotazovací jazyk umožňující efektivnější přístup při tvorbě API. Pracuje na úrovni aplikační vrstvy, je silně typované. Dotaz na API specifikuje požadovaný tvar odpovědi. Oproti REST snižuje počet dotazů, objem přenášených dat a jejich redundanci. Také není třeba používat složitější logiku na klientovi (ve stylu mám 4 dotazy, 3 projdou v pohodě a poslední selže – co teď? ; GraphQL prostě jeden dotaz a ok/not ok).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">GraphQL</th><th style="text-align:left;">REST</th></tr></thead><tbody><tr><td style="text-align:left;">Jeden endpoint</td><td style="text-align:left;">Mnoho endpointů</td></tr><tr><td style="text-align:left;">Vrací jen klientem specifikovaná data</td><td style="text-align:left;">Vrací “všechna” data</td></tr><tr><td style="text-align:left;">Nezávislé na protokolu</td><td style="text-align:left;">HTTP protokol</td></tr></tbody></table></div>
+<p>Datový model:<br/>
+Jazyk pro popis: GraphQL SDL (schema definition language)<br/>
+Jednoduché typy: int, string, boolean, …<br/>
+Uživatelské typy (struktury): osoba, auto, …<br/>
+Speciální typy reprezentující volání API:</p>
+<ul>
+<li>Query – pro čtení dat</li>
+<li>Mutations – pro změnu dat</li>
+</ul>
+<p>Ukázka (Závorky <span>→</span> kolekce, ! <span>→</span> not null):<br/>
+type Person {<br/>
+name: String!,<br/>
+age: Int!,<br/>
+cars: [car!]!<br/>
+}<br/>
+type Query {<br/>
+findPerson(name: String!): Person!<br/>
+}<br/>
+type Mutations {<br/>
+CreatePerson(name: String!, age: Int!): Person!<br/>
+}<br/>
+Cca takový popis je potřeba připravit na serveru, když chci publikovat GraphQL API.<br/>
+Klient zas musí specifikovat jaká data chce.<br/>
+findPerson (name: „James“) {<br/>
+age<br/>
+}<br/>
+Ukázka s HTTP:<br/>
+GET: <a href="http://myapi/graphql?query=%7Bme%7Bname" class="external">http://myapi.com/graphql?query={me{name<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>}}<br/>
+POST: Specifikovat Data application/graphql a pak jen {me{name}}</p>
+<h6 id="4x-gestalt-principy-vyjmenovat-a-nakreslit-a-popsat-7b">4x Gestalt principy, vyjmenovat a nakreslit a popsat (7b)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4x-gestalt-principy-vyjmenovat-a-nakreslit-a-popsat-7b" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong><img src=".././assets/images/past-image11.png" alt/></strong><br/>
+<strong><img src=".././assets/images/past-image12.png" alt/></strong></p>
+<ul>
+<li>pravidlo uzavreni, zavirat prvky do chlivecku, tvaru..</li>
+</ul>
+<h6 id="3x-olap-charakteristika-rolap-jak-se-ukládá-do-relační-db---schémata-hvězda-a-vločka-popsat">3x OLAP charakteristika, ROLAP, jak se ukládá do relační DB - schémata hvězda a vločka popsat.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3x-olap-charakteristika-rolap-jak-se-ukládá-do-relační-db---schémata-hvězda-a-vločka-popsat" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong>OLAP</strong><br/>
+online analytics processing. Je to system pro podporu rozhodovani pro podnikani (podpora Business Inteligence). OLAP zahrnuje v sebe procesy, technologie, a nastroje potrebne k pretvoreni dat a informaci do znalosti pro podporu rozhodovani na ruznych urovnich.</p>
+<p>Architektury serveru OLAP: MOLAP, ROLAP, HOLAP, specialozovaný SQL server</p>
+<p><strong>Relační OLAP (ROLAP)</strong></p>
+<ul>
+<li>užívá relační nebo rozšířená relační SŘBD</li>
+<li>údaje jsou získávány z relačních tabulek, jsou uživateli předkládány jako multidimenzionální pohled</li>
+<li>data jsou uložena jako záznamy relační tabulky</li>
+<li>žádná redundance</li>
+</ul>
+<p>______________________________________________________________________________________</p>
+<ul>
+<li>
+<p>zahrnují optimalizaci BE, implementaci agregační navigační logiky a dodatečných pomůcek/služeb</p>
+</li>
+<li>
+<p>velká možnost škálování</p>
+</li>
+</ul>
+<p><strong>Hvězda</strong></p>
+<p>jedna tabulka faktů je ve středu připojena k množině relací dimenzí</p>
+<p><strong>Vločka</strong></p>
+<p>poskytuje zjemnění schématu hvězdy tak, že hierarchie dimenzí je explicitně reprezentována normalizováním relací dimenzí</p>
+<h6 id="3x-canvas-a-svg-popsat-uvest-jak-se-vztahuji-k-dom-a-pro-vykresleni-diagramu">3x Canvas a SVG, popsat, uvest jak se vztahuji k DOM a pro vykresleni diagramu.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3x-canvas-a-svg-popsat-uvest-jak-se-vztahuji-k-dom-a-pro-vykresleni-diagramu" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong>Canvas</strong><br/>
+umožňuje renderovat grafické prvky ve formě rastrové grafiky<br/>
+vhodné pro náročnější grafiku nebo při tvorbě her<br/>
+&lt;canvas> je obdélníková oblast určující:</p>
+<ul>
+<li>výšku</li>
+<li>šířku</li>
+<li>identifikátor v rámci dokumentu (id)</li>
+</ul>
+<p>Prvky nejsou reprezentovány v DOM (<span>⇒</span> obtížnější přístup, manipulace, provázání s uživatelskými eventy)<br/>
+Pro tvorbu diagramů je lepší SVG<br/>
+Pro úpravu obsahu je potřeba použít Canvas API<br/>
+Metody pro kreslení poskytuje objekt získaný metodou getContext()</p>
+<p><strong>SVG</strong><br/>
+značkovací jazyk rodiny XML pro popis vektorové grafiky<br/>
+není vhodné pro náročnější grafiku<br/>
+&lt;svg> je obdélníková oblast určující:</p>
+<ul>
+<li>šířku</li>
+<li>výšku</li>
+<li>v těle popis vektorových elementů</li>
+<li>případně identifikátor v rámci dokumentu (id)</li>
+</ul>
+<p>Lze vložit přímo do HTML <span>⇒</span> Prvky jsou reprezentovány v DOM<br/>
+Nutnost dynamicky generovat svg elementy na základě dat<br/>
+Elementům je možné nastavit handlery událostí (onclick, mouseover, …)<br/>
+Základní elementy: &lt;rect>, &lt;circle>, &lt;line>, &lt;path>, …<br/>
+Styly lze nastavit buď inline nebo za použití externího CSS - fill, stroke, …</p>
+<h6 id="3x-vedome-vs-podvedome-vnimanie-atributy-podvedomeho-vnimania-ako-sa-podvedome-vnimanie-uplatni-vo-vizualizacii-ako-sa-podvedome-vnimanie-uplatni-v-dashboardech">3x Vedome vs. podvedome vnimanie. Atributy podvedomeho vnimania. Ako sa podvedome vnimanie uplatni vo vizualizacii? Ako sa podvedome vnimanie uplatni v dashboardech?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3x-vedome-vs-podvedome-vnimanie-atributy-podvedomeho-vnimania-ako-sa-podvedome-vnimanie-uplatni-vo-vizualizacii-ako-sa-podvedome-vnimanie-uplatni-v-dashboardech" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong>Vědomé</strong>: krátkodobá část paměti, zpracování rozpoznaných objektů (přiřazení významu)<br/>
+<strong>Podvědomé</strong>: obrazová část paměti, předzpracování obrazu</p>
+<p><strong>Atributy</strong> podvědomého vnímání:<br/>
+orientace, délka, šířka, velikost, tvar, ohraničení, výplň, odstín, barevná intenzita, 2D pozice, …</p>
+<p><strong>Uplatnenie podvedomého vnímania -</strong> človek má tendenciu zjednodušovať a zhlukovať prvky používateľského rozhrania do väčších celkov, čím sa zrýchľuje jeho vizuálne vnímanie<br/>
+<strong>Uplatnenie v dashboards -</strong> pri dodržiavaní pravidiel vyplývajúcich z atribútov podvedomého vnímania (napr. pravidlo jednoduchosti, pravidlo blízkosti, pravidlo podobnosti) bude výsledný dashboard intuitívnejší a pre používateľa príjemnejší</p>
+<h6 id="2x-d3js-popsat-co-ma-na-vstupuvystupu-uveden-seznam-items--1531224124-a-bylo-potreba-napsat-prikaz-ktery-ziska-nejaky-seznam-a-nahradi-jeho-hodnoty-s-hodnotami-v-seznamu-items">2x D3.js popsat, co ma na vstupu/vystupu. Uveden seznam items = [15,312,24124…] a bylo potreba napsat prikaz ktery ziska nejaky seznam a nahradi jeho hodnoty s hodnotami v seznamu items.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2x-d3js-popsat-co-ma-na-vstupuvystupu-uveden-seznam-items--1531224124-a-bylo-potreba-napsat-prikaz-ktery-ziska-nejaky-seznam-a-nahradi-jeho-hodnoty-s-hodnotami-v-seznamu-items" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>D3.js - knihovna jazyka Javascript určená pro manipulaci s dokumenty na základě dat<br/>
+<strong>Vstup:</strong> data (csv, json, xml, …)<br/>
+<strong>Výstup:</strong> dokument (elementy DOM)</p>
+<p><strong>Seznam items (tohle je tip):</strong><br/>
+<img src=".././assets/images/past-image13.png" alt/></p>
+<p><strong>Pro rozšíření:</strong><br/>
+<strong><img src=".././assets/images/past-image14.png" alt/></strong><br/>
+<img src=".././assets/images/past-image15.png" alt/></p>
+<h6 id="2x-autentizacia-v-reste-preco-nie-je-mozne-pouzit-sessions-uvedte-mechanizmy-autentizacie-pre-rest-popiste-json-web-token-co-to-je-z-coho-sa-sklada-a-ako-prebieha-autentizacia-pomocou-jwt">2x Autentizacia v RESTe. Preco nie je mozne pouzit sessions? Uvedte mechanizmy autentizacie pre REST. Popiste JSON Web Token, co to je, z coho sa sklada a ako prebieha autentizacia pomocou JWT.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2x-autentizacia-v-reste-preco-nie-je-mozne-pouzit-sessions-uvedte-mechanizmy-autentizacie-pre-rest-popiste-json-web-token-co-to-je-z-coho-sa-sklada-a-ako-prebieha-autentizacia-pomocou-jwt" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>REST - bezstavový protokol<br/>
+Požadavek musí obsahovat vše, žádné ukládání stavu na serveru</p>
+<p><strong>Proč nejde použít session:</strong><br/>
+Sessions se ukládají na serveru, což však vylučují předchozí body</p>
+<p><strong>Mechanismy:</strong><br/>
+HTTP Basics autentizace<br/>
+JWT token<br/>
+OAuth</p>
+<p><strong>Popis JWT:</strong><br/>
+Představuje způsob pro bezpečnou výměnu informací mezi dvěma stranami.<br/>
+Cílem JWT je možnost ověření autenticity dat.<br/>
+Má omezenou platnost, ve finále je to hodně dlouhý string.</p>
+<p><strong>Z čeho se skládá:</strong><br/>
+Hlavička - účel, použité algoritmy<br/>
+Payload - JSON data obsahující ID uživatele, jeho práva, expiraci, …<br/>
+Podpis - pro ověření, že token nebyl podvržen nebo změněn cestou</p>
+<p>Tyto tři části se zakódují pomocí base64 a spojí do jednoho celku xxxx.yyyy.zzzz (odděleny tečkami)</p>
+<p><strong>Průběh:</strong><br/>
+Klient kontaktuje autentizační server a dodá autentizační údaje. Server je ověří,<br/>
+vygeneruje podepsaný JWT token a vrátí jej klientovi. Klient při každém API requestu zašle v hlavičce<br/>
+Authorization: Bearer xxxx.yyyy.zzzz<br/>
+API ověří token (platnost, roli, …) a buď provede nebo zamítne operaci</p>
+<ul>
+<li>HTTP Basics by muselo pri kazdom poziadavku pozerat do DB, teda kazdy endpoint by musel mat pristup k DB… u JWT staci aby mala pristup ta jedna mikrosluzba generujuca tokeny</li>
+</ul>
+<p>@App.Path(“resources”)<br/>
+@LoginConfig(AuthMethod=”MP-JWT”)<br/>
+@DeclareRoles({‘admin’,’registered’,…})<br/>
+public clas ……</p>
+<p>u kokretneho endpointu<br/>
+@Path(“reservations/”)<br/>
+@RolesAllowed(“admin”)</p>
+<h6 id="2x-cdi---popiste-cdi-ako-sa-definuju-cdi-objekty-kto-ich-vytvara-popiste-pojem-scope-v-tomto-kontexte-vysvetlite-request-session-application-scope">2x CDI - Popiste CDI, ako sa definuju CDI objekty, kto ich vytvara. Popiste pojem scope v tomto kontexte, vysvetlite request, session, application scope.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2x-cdi---popiste-cdi-ako-sa-definuju-cdi-objekty-kto-ich-vytvara-popiste-pojem-scope-v-tomto-kontexte-vysvetlite-request-session-application-scope" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>Contexts and Dependency Injection (CDI) - obmedzuje závislosti medzi triedami priamo v kóde<br/>
+vytváranie objektov zaisťuje CDI kontajner<br/>
+scope - poskytuje objektu dobre definovaný životný model</p>
+<ul>
+<li>@Dependent - vzniká pre konkrétny prípad, zaniká s vlastníkom (defaultne)</li>
+</ul>
+<ul>
+<li>@RequestScoped – inštancia trvá po dobu HTTP požadavku</li>
+<li>@SessionScoped – inštancia trvá po dobu HTTP session</li>
+<li>@ApplicationScoped – jedna inštancia pre aplikáciu</li>
+</ul>
+<p><strong>@Named(“myBean”)</strong><br/>
+<strong>@RequestScoped</strong><br/>
+<strong>public class MyBean {</strong></p>
+<pre><code>**@Inject**  
+**private MyDependency myDependency;**
+
+**public void doSomething() {**  
+    **// use myDependency**  
+**}**  
+</code></pre>
+<p><strong>}</strong></p>
+<h6 id="2x-sekvencni-a-hierachicke-procesy-a-nakreslit-v-uml">2x Sekvencni a hierachicke procesy a nakreslit v UML<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2x-sekvencni-a-hierachicke-procesy-a-nakreslit-v-uml" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>Sekvencne:</p>
+<ul>
+<li>model: regularne gramatiky, konecne automaty</li>
+<li>vstup moze byt aj prazdny</li>
+<li>diagram - jedna sa o <strong>UML</strong>:</li>
+</ul>
+<p><img src=".././assets/images/past-image16.png" alt/></p>
+<p>Hierarchicke:</p>
+<ul>
+<li>model: bezkontextove gramatiky, zasobnikovy automat</li>
+<li>vstup musi byt vzdy oznaceny, inak moze vzniknut nekonecny cyklus</li>
+<li>diagram - jedna sa o <strong>variantu UML</strong>:</li>
+</ul>
+<p><img src=".././assets/images/past-image17.png" alt/></p>
+<h6 id="2x-zretazene-procesy-vs-savepointy">2x Zretazene procesy vs Savepointy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2x-zretazene-procesy-vs-savepointy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>p6., slide 48 - Procesy, pokročilé modely procesů, cesta k workflow</p>
+<p><strong>Zreťazený Proces vs Savepoint</strong></p>
+<p><strong>Samostatné transakcie z jednej väčšej vs jedna transakcia z dílčich častí</strong><br/>
+<strong>návrat iba po posledný commit vs návrat vrámci savepointu v transakcii</strong><br/>
+<strong>lokálne premenné stráca vs uchováva</strong><br/>
+<strong>Nedodržiava ACID - Atomickosť nikdy a Izolovanosť sa dá ovplyvniť ( chain() ) vs Dodržiava</strong></p>
+<p>Sekvenčný model - savepoints:</p>
+<ul>
+<li>Jedná sa o <strong>jednu transakciu, ktorá v svojích podúlohach vytvára savepointy, na ktoré sa vracia v prípade výpadku.</strong></li>
+<li><strong>Pomocou rollback(Savepoint) sa obnoví systém do stavu pri uložení Savepointu.</strong> Savepoint <strong>zachová lokálne premenné.</strong> Potom sa pokračuje.</li>
+<li>Pri zavolaní <strong>abort(SavePoint) sa nepokračuje.</strong></li>
+</ul>
+<p>Lokální proměnné se při rollbacku na poslední savepoint ponechávají - lze tak do nich např. uložit kudy jsme se pokoušeli rezervovat lety minule, když jsme pak museli rollbackovat protože tam bylo plno. Při dalším pokusu tak můžeme jít tou druhou cestou a realizovat tak backtracking**. Proč nevadí že se proměnné nerollbackují:** Transakce slouží především k přenosu dat z/do databáze. Pokud dojde k úspěšné transakci, uloží se milník typu STAV1_DB. Na lokálních proměnných v tomto ohledu příliš nezáleží, důležité je, že databáze se nachází v požadovaném stavu a lze pokračovat v transakci od zvoleného milníku.</p>
+<p><strong>Zretazene procesy:</strong><br/>
+<strong>dlho trvajúce transakcie - objednávka, expedícia, fakturácia</strong><br/>
+<strong>dekomponizujeme skrz:</strong></p>
+<ol>
+<li><strong>Lepšiu výkonnosť <span>⇒</span> nemôže splňovať ACID</strong></li>
+<li><strong>Zabránenie straty celej práce. Nechceme rollbacknúť celý proces.</strong></li>
+</ol>
+<p><strong>Transakcia sa rozloží na podtransakcie a oproti savopointom je každá podtransakcia samostatná transakcia, to znamená, že Chaining:</strong></p>
+<ol>
+<li><strong>Po prevedení commit() sa už nedajú zmeny vrátiť.</strong></li>
+<li><strong>Nezachovávajú sa lokálne premenné: Pre koho sa robil nákup?</strong></li>
+<li><strong>Nie je atomická: V prípade výpadku nemusia byť vykonnané všetky podtransakcie</strong></li>
+</ol>
+<ul>
+<li>
+<p><strong>Alternatíva: Ukladanie do databáze</strong></p>
+<p><strong>Nevýhoda - súbežný prístup ostatných</strong></p>
+<p><strong>Vyriešené pomocou locks</strong></p>
+</li>
+</ul>
+<p><strong>V okamžiku commitu podtransakcie sa môžu vykonať zmeny systému.</strong><br/>
+<strong>Medzi S1 a S2 sa niečo stane a tým pádom S2 číta iné dáta ako S1 zapísala.</strong></p>
+<p><strong>Data Context</strong></p>
+<ul>
+<li><strong>odomykanie z hľadiska efektu:</strong>
+<ul>
+<li><strong>Odomynie medzi S1 a S2, aby mohli bežať súbežné procesy to však spôsobí, že celá Transakcia izolovaná nie je, iba jej podtransakcie.</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Alternatívna Sémantika pre získanie Izolovanosti</strong></p>
+<ul>
+<li><strong>miesto commit() sa použije chain()</strong>
+<ul>
+<li><strong>neuvoľní db context no zhorší výkonnosť</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Roll Forward</strong></p>
+<ul>
+<li><strong>Aplikácia môže iba pokračovať, od tadiaľ kde bol prevedený posledný commit.</strong></li>
+<li><strong>Pokračuje sa 2 spôsobmi:</strong>
+<ol>
+<li><strong>dokončenie Transakcie</strong></li>
+<li><strong>operácie, kt. zotavia do konzistentého stavu</strong></li>
+</ol>
+</li>
+</ul>
+<p><strong>Kompenzujúce transakcie</strong></p>
+<ul>
+<li><strong>transakcie, ktoré nevytvoria rollback, ale snažia sa systém nejakou novou transakciou dostať do stavu predtým.</strong></li>
+<li><strong>príklad: registrácia-deregistrácia uživateľa</strong></li>
+</ul>
+<h6 id="1x-typy-geografickych-grafu--vizualizace-geografických-dat-co-je-geojson-a-použití">1x Typy geografickych grafu / vizualizace geografických dat, co je GeoJSON a použití<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1x-typy-geografickych-grafu--vizualizace-geografických-dat-co-je-geojson-a-použití" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong>Řešení:</strong></p>
+<p><strong>Typy</strong></p>
+<ul>
+<li><strong>rastrové</strong> - obrázky reprezentující reálnou mapu (<em>tiles</em>) - odpovídají aktuálnímu přiblížení, pozici (např. OpenStreetMap, Google Maps, Mapy.cz)</li>
+<li><strong>vektorové</strong> - polygony (státy), cesty (řeky), body (místa na mapě)</li>
+<li><strong>kombinované</strong> (nejpoužívanější) - rastrový podklad + vektorové překrývající se objekty (<em>overlays</em>)</li>
+</ul>
+<p><strong>GeoJSON</strong></p>
+<p>Formát pro kódování geografických dat (standardizovaný). Popisuje body, čáry, polygony atd. Hodnoty reprezentují zeměpisné souřadnice. Použití například pro reprezentaci státních hranic. Příklad:</p>
+<p><strong>Dostupné knihovny</strong></p>
+<p>D3 Kartogram, Leaflet, Google Maps API, Mapy.cz API</p>
+<h6 id="1x-dedicnost-v-objektovem-modelu-definice-jednoduche-a-vicenasobne-dedicnosti--jejich-grafy">1x dedicnost v objektovem modelu. definice jednoduche a vicenasobne dedicnosti + jejich grafy.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1x-dedicnost-v-objektovem-modelu-definice-jednoduche-a-vicenasobne-dedicnosti--jejich-grafy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong><img src=".././assets/images/past-image18.png" alt/></strong><br/>
+<strong><img src=".././assets/images/past-image19.png" alt/></strong></p>
+<ul>
+<li>U <strong>jednoduché dědičnosti</strong> každý následník smí mít pouze jediného předka. V grafické podobě dědičnosti to znamená, že ze žádného typu nesmí vycházet více, nežli jedna šipka. Takto zakreslený graf je potom stromem.</li>
+<li>U <strong>vícenásobné dědičnosti</strong> není počet předků omezen. V grafické podobě dědičnosti to znamená, že z každého typu smí vycházet libovolný počet šipek. Takto zakreslený graf je obecný acyklický graf.</li>
+</ul>
+<p><img src=".././assets/images/past-image20.png" alt/></p>
+<h6 id="1x-datový-sklad---schéma-datový-model-jak-se-liší-od-oltp">1x Datový sklad - schéma, datový model, jak se liší od OLTP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1x-datový-sklad---schéma-datový-model-jak-se-liší-od-oltp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>Online Analytical Processing &amp; Business Intelligence - str11. / merged 516</p>
+<p><img src=".././assets/images/past-image21.png" alt/></p>
+<ul>
+<li>Datovým skladem nazýváme technologii
+<ul>
+<li>natažení (extrakce a transformation)</li>
+<li>uložení (loading) a</li>
+<li>poskytování dat pro podporu rozhodování prováděnou analýzou informací a vytvářením znalostí</li>
+</ul>
+</li>
+<li>je typicky provozován odděleně od základní operační databáze (též databáze detailů nebo produkční databáze)</li>
+</ul>
+<p>datový model -<br/>
+<img src=".././assets/images/past-image22.png" alt/></p>
+<h6 id="1x-jak-vypadá-bullet-graf-co-z-něj-lze-vyčíst">1x Jak vypadá Bullet graf, co z něj lze vyčíst<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1x-jak-vypadá-bullet-graf-co-z-něj-lze-vyčíst" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<ul>
+<li>funguje na stejném principu jako stupnice na teploměru</li>
+<li>šikovná náhrada za kruhová měřidla (tachometry , gauges)</li>
+<li>kompaktní, jednorozměrné</li>
+<li>jednotlivé bullet grafy je možné skládat vedle sebe</li>
+</ul>
+<p><img src=".././assets/images/past-image23.png" alt/></p>
+<h6 id="1x-vícetypovost---k-čemu-je-potřeba-jaký-je-s-ní-spojen-problém-jak-se-řeší-uvést-příklad">1x Vícetypovost - k čemu je potřeba, jaký je s ní spojen problém, jak se řeší, uvést příklad<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1x-vícetypovost---k-čemu-je-potřeba-jaký-je-s-ní-spojen-problém-jak-se-řeší-uvést-příklad" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p>vícetypovost je vícenásobná dědičnost (škaredé, fuj) pro persistentní objekty prováděná v čase běhu<br/>
+role: změna role objektu v čase u perzistentních objektů</p>
+<p>Pokud objektem modelujeme jistou realnou skutecnost, je predpoklad existence jedineho<br/>
+koncoveho typu je nedostatecna. Pokud modelujeme Osobu, tak muze mit vice roli, muze<br/>
+byt student, muze byt ctenar ve knihovne …</p>
+<p>V db aplikacich jsou objekty persistentni a neni mozne predem predpokladat jejich vsechny<br/>
+mozne koncove typy. Napr clovek jak bude rust, tak bude zakem, studentem, pracujicim,<br/>
+duchodcem … ruzne role. Navic lze vselijak kombinovat. Je tedy nutne umoznit vytvareni<br/>
+rychznych kombinaci koncovych typu v jedinem objektu behem jeho existence. A to je<br/>
+prave ta vicetypovost.</p>
+<p><em>Problemy?</em><br/>
+Problém kolize: zamezení výskytu nedovolených kombinací mohou zajistit relace současné a výlučné existence místo relace dědičnosti.</p>
+<h6 id="todo---1x--definovat-multidimenzionalni-kostku-nakreslit-4d-kostku-pro-time-item-location-supplier-popísať-kostku-pro-počet">TODO - 1x , definovat multidimenzionalni kostku, nakreslit 4D kostku pro time, item, location, supplier. Popísať kostku pro počet.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#todo---1x--definovat-multidimenzionalni-kostku-nakreslit-4d-kostku-pro-time-item-location-supplier-popísať-kostku-pro-počet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<p><strong><img src=".././assets/images/past-image24.png" alt/></strong><br/>
+<strong>TODO - Ako by ste robili tu ten pocet ? Ma byt ten pocet = 10 alebo 5 ? Maju sa najskor zlucit tie riadky, ktore maju rovnake hodnoty a az potom sa rata ten pocet?</strong></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graf</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="backlinks"><h3>Příchozí odkazy</h3><ul id="list-2" class="overflow"><li><a href="../" class="internal">PIS Exam Speedrun</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Vytvořeno pomocí <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

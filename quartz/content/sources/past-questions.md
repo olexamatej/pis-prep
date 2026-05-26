@@ -1,12 +1,14 @@
 ---
 title: "Past Questions"
-description: "Transformed PIS-najčastejšie otázky source."
+description: "Transformed PIS-najčastejšie otázky.md source."
 tags:
   - pis
   - source
 ---
 
 # Past Questions
+
+Pôvodný súbor: `PIS-najčastejšie otázky.md`.
 
 Táto stránka je transformovaný zdrojový súbor. Base64 obrázky boli vyextrahované do `assets/images`, aby ich Quartz normálne renderoval.
 

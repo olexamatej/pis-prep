@@ -15,9 +15,58 @@ const pastRaw = fs.readFileSync(path.join(root, pastFile), "utf8")
 const recentRaw = fs.readFileSync(path.join(root, recentFile), "utf8")
 
 const imageRegistry = new Map()
+const expectedOutputs = new Set()
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true })
+}
+
+function markExpected(target) {
+  expectedOutputs.add(target)
+}
+
+function writeBufferIfChanged(target, nextBuffer) {
+  markExpected(target)
+  ensureDir(path.dirname(target))
+
+  if (fs.existsSync(target)) {
+    const prevBuffer = fs.readFileSync(target)
+    if (Buffer.compare(prevBuffer, nextBuffer) === 0) return
+  }
+
+  fs.writeFileSync(target, nextBuffer)
+}
+
+function writeTextIfChanged(target, nextText) {
+  markExpected(target)
+  ensureDir(path.dirname(target))
+
+  if (fs.existsSync(target)) {
+    const prevText = fs.readFileSync(target, "utf8")
+    if (prevText === nextText) return
+  }
+
+  fs.writeFileSync(target, nextText)
+}
+
+function pruneUnexpectedFiles(dir) {
+  if (!fs.existsSync(dir)) return
+
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const target = path.join(dir, entry.name)
+
+    if (entry.isDirectory()) {
+      pruneUnexpectedFiles(target)
+      if (fs.readdirSync(target).length === 0) {
+        fs.rmdirSync(target)
+      }
+      continue
+    }
+
+    if (!expectedOutputs.has(target)) {
+      fs.unlinkSync(target)
+    }
+  }
 }
 
 function slugify(input) {
@@ -43,7 +92,7 @@ function extractImages(sourceName, raw, prefix) {
     const ext = extRaw === "jpeg" ? "jpg" : extRaw
     const filename = `${prefix}-image${id}.${ext}`
     const target = path.join(assetsDir, filename)
-    fs.writeFileSync(target, Buffer.from(base64, "base64"))
+    writeBufferIfChanged(target, Buffer.from(base64, "base64"))
     map.set(`image${id}`, filename)
   }
 
@@ -184,8 +233,8 @@ function frontmatter(title, description, tags = []) {
 
 function writeContent(relativePath, body) {
   const target = path.join(contentDir, relativePath)
-  ensureDir(path.dirname(target))
-  fs.writeFileSync(target, body.endsWith("\n") ? body : `${body}\n`)
+  const nextText = body.endsWith("\n") ? body : `${body}\n`
+  writeTextIfChanged(target, nextText)
 }
 
 function table(rows) {
@@ -1703,9 +1752,9 @@ ${mustKnowIndexTable(mustKnowPages, "must-know/")}
 - [ROI plán](analysis/roi-plan)
 - [Bare minimum](analysis/bare-minimum)
 - [Prvý opravný prediction](analysis/prvy-opravny-prediction)
-- [Transformovaný preparation speedrun](sources/preparation-speedrun)
-- [Transformované časté otázky](sources/past-questions)
-- [Recent otázky z PIS-zbytok](sources/recent-2024-25)
+- [PIS_priprava_speedrun(1).md — transformovaný zdroj](sources/preparation-speedrun)
+- [PIS-najčastejšie otázky.md — transformovaný zdroj](sources/past-questions)
+- [PIS-zbytok.md — recent otázky](sources/recent-2024-25)
 `
 }
 
@@ -2047,6 +2096,8 @@ function generateSourcePage(title, description, sourceName, raw) {
   const body = demoteHeadings(transformMarkdown(raw, sourceName, pageDir), 1)
   return `${frontmatter(title, description, ["pis", "source"])}# ${title}
 
+Pôvodný súbor: \`${sourceName}\`.
+
 Táto stránka je transformovaný zdrojový súbor. Base64 obrázky boli vyextrahované do \`assets/images\`, aby ich Quartz normálne renderoval.
 
 ${body}
@@ -2060,17 +2111,15 @@ function generateRecentPage() {
     ["pis", "source", "recent"],
   )}# Recent otázky z PIS-zbytok
 
+Pôvodný súbor: \`${recentFile}\`.
+
 \`\`\`text
 ${recentRaw.trim()}
 \`\`\`
 `
 }
 
-ensureDir(assetsDir)
-extractImages(prepFile, prepRaw, "prep")
-extractImages(pastFile, pastRaw, "past")
-
-fs.rmSync(contentDir, { recursive: true, force: true })
+ensureDir(contentDir)
 ensureDir(assetsDir)
 extractImages(prepFile, prepRaw, "prep")
 extractImages(pastFile, pastRaw, "past")
@@ -2083,11 +2132,11 @@ writeContent("analysis/prvy-opravny-prediction.md", generatePrvyOpravnyPredictio
 writeContent("must-know/index.md", generateMustKnowIndex())
 writeContent(
   "sources/preparation-speedrun.md",
-  generateSourcePage("Preparation Speedrun", "Transformed PIS_priprava_speedrun source.", prepFile, prepRaw),
+  generateSourcePage("Preparation Speedrun", "Transformed PIS_priprava_speedrun(1).md source.", prepFile, prepRaw),
 )
 writeContent(
   "sources/past-questions.md",
-  generateSourcePage("Past Questions", "Transformed PIS-najčastejšie otázky source.", pastFile, pastRaw),
+  generateSourcePage("Past Questions", "Transformed PIS-najčastejšie otázky.md source.", pastFile, pastRaw),
 )
 writeContent("sources/recent-2024-25.md", generateRecentPage())
 
@@ -2098,6 +2147,8 @@ for (const topic of topics) {
 for (const page of mustKnowPages) {
   writeContent(page.file, generateMustKnowPage(page))
 }
+
+pruneUnexpectedFiles(contentDir)
 
 console.log(
   `Generated ${topics.length} topic pages, ${mustKnowPages.length} must-know pages, 4 analysis pages and extracted images.`, 

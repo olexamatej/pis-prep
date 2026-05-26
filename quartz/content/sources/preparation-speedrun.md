@@ -1,12 +1,14 @@
 ---
 title: "Preparation Speedrun"
-description: "Transformed PIS_priprava_speedrun source."
+description: "Transformed PIS_priprava_speedrun(1).md source."
 tags:
   - pis
   - source
 ---
 
 # Preparation Speedrun
+
+Pôvodný súbor: `PIS_priprava_speedrun(1).md`.
 
 Táto stránka je transformovaný zdrojový súbor. Base64 obrázky boli vyextrahované do `assets/images`, aby ich Quartz normálne renderoval.
 

@@ -42,6 +42,9 @@ if [[ -z "${GITHUB_REPOSITORY:-}" ]]; then
   fi
 fi
 
+cd "$repo_root"
+node scripts/generate-site.mjs
+
 cd "$quartz_dir"
 
 if [[ ! -d node_modules ]]; then
